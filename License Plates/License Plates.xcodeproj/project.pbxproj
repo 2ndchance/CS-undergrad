@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CA53EBEA1EBBAA6B00B255AA /* StateCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA53EBE81EBBAA6B00B255AA /* StateCell.swift */; };
+		CA53EBEB1EBBAA6B00B255AA /* StateCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CA53EBE91EBBAA6B00B255AA /* StateCell.xib */; };
 		CAC6FB931EAE877D00A59EAF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC6FB921EAE877D00A59EAF /* AppDelegate.swift */; };
 		CAC6FB951EAE877D00A59EAF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC6FB941EAE877D00A59EAF /* ViewController.swift */; };
 		CAC6FB981EAE877D00A59EAF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CAC6FB961EAE877D00A59EAF /* Main.storyboard */; };
@@ -16,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CA53EBE81EBBAA6B00B255AA /* StateCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StateCell.swift; sourceTree = "<group>"; };
+		CA53EBE91EBBAA6B00B255AA /* StateCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StateCell.xib; sourceTree = "<group>"; };
 		CAC6FB8F1EAE877D00A59EAF /* License Plates.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "License Plates.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CAC6FB921EAE877D00A59EAF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CAC6FB941EAE877D00A59EAF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; usesTabs = 0; };
@@ -63,6 +67,8 @@
 				CAC6FB9E1EAE877D00A59EAF /* LaunchScreen.storyboard */,
 				CAC6FBA11EAE877D00A59EAF /* Info.plist */,
 				CAC6FB991EAE877D00A59EAF /* License_Plates.xcdatamodeld */,
+				CA53EBE81EBBAA6B00B255AA /* StateCell.swift */,
+				CA53EBE91EBBAA6B00B255AA /* StateCell.xib */,
 			);
 			path = "License Plates";
 			sourceTree = "<group>";
@@ -129,6 +135,7 @@
 				CAC6FBA01EAE877D00A59EAF /* LaunchScreen.storyboard in Resources */,
 				CAC6FB9D1EAE877D00A59EAF /* Assets.xcassets in Resources */,
 				CAC6FB981EAE877D00A59EAF /* Main.storyboard in Resources */,
+				CA53EBEB1EBBAA6B00B255AA /* StateCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -142,6 +149,7 @@
 				CAC6FB951EAE877D00A59EAF /* ViewController.swift in Sources */,
 				CAC6FB9B1EAE877D00A59EAF /* License_Plates.xcdatamodeld in Sources */,
 				CAC6FB931EAE877D00A59EAF /* AppDelegate.swift in Sources */,
+				CA53EBEA1EBBAA6B00B255AA /* StateCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
