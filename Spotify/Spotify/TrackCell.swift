@@ -18,9 +18,9 @@ class TrackCell: UITableViewCell {
             Artist.text = spottrack?.artist
             Artist.font = UIFont.boldSystemFont(ofSize: 13.0)
             Title.text = spottrack?.title
-            let url = NSURL(string: (spottrack?.arturl)!)
+            let url = NSURL(string: (spottrack?.arturl)!)//this approach was taken from example on stackoverflow
             let data = NSData(contentsOf: url! as URL)
-            if ((data?.length)! > 0){
+            if (data != nil){
                 AlbumArt.image = UIImage(data: data! as Data)
             }
             else {
