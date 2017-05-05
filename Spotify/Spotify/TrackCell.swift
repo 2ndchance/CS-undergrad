@@ -21,13 +21,13 @@ class TrackCell: UITableViewCell {
             let url = NSURL(string: (spottrack?.arturl)!)//this approach was taken from example on stackoverflow
             let data = NSData(contentsOf: url! as URL)
             if (data != nil){
-                AlbumArt.image = UIImage(data: data! as Data)
+                AlbumArt.image = UIImage(data: data! as Data) //sets an image if the url is empty
             }
             else {
                 AlbumArt.image = #imageLiteral(resourceName: "USU")
             }
             
-           // AlbumArt.image = #imageLiteral(resourceName: "USU")
+            //AlbumArt.image.s
         }
     }
     

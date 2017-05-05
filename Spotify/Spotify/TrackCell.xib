@@ -11,34 +11,34 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleAspectFit" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="75" id="KGk-i7-Jjw" customClass="TrackCell" customModule="Spotify">
+        <tableViewCell contentMode="scaleAspectFit" selectionStyle="default" indentationWidth="0.0" shouldIndentWhileEditing="NO" reuseIdentifier="cell" id="KGk-i7-Jjw" customClass="TrackCell" customModule="Spotify">
             <rect key="frame" x="0.0" y="0.0" width="342" height="75"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM" customClass="TrackCell" customModule="Spotify" customModuleProvider="target">
                 <rect key="frame" x="0.0" y="0.0" width="342" height="75"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Tgs-Xf-8fA">
+                    <stackView opaque="NO" contentMode="scaleAspectFit" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Tgs-Xf-8fA">
                         <rect key="frame" x="0.0" y="0.0" width="342" height="75"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="uJ0-4X-ryf">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="uJ0-4X-ryf">
                                 <rect key="frame" x="0.0" y="0.0" width="80" height="75"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="80" id="XsM-C1-1en"/>
                                 </constraints>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleAspectFit" axis="vertical" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="wrv-ef-Ibu">
-                                <rect key="frame" x="90" y="0.0" width="252" height="75"/>
+                                <rect key="frame" x="100" y="0.0" width="242" height="75"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" preservesSuperviewLayoutMargins="YES" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OTD-Ku-lSQ" userLabel="Title">
-                                        <rect key="frame" x="0.0" y="0.0" width="252" height="37.5"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" preservesSuperviewLayoutMargins="YES" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OTD-Ku-lSQ" userLabel="Title">
+                                        <rect key="frame" x="0.0" y="0.0" width="242" height="37.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                         <size key="shadowOffset" width="0.0" height="0.0"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" text="Artist" textAlignment="natural" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8MF-91-b5W" userLabel="Artist">
-                                        <rect key="frame" x="0.0" y="37.5" width="252" height="37.5"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" text="Artist" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8MF-91-b5W" userLabel="Artist">
+                                        <rect key="frame" x="0.0" y="37.5" width="242" height="37.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -47,6 +47,7 @@
                             </stackView>
                         </subviews>
                         <constraints>
+                            <constraint firstItem="uJ0-4X-ryf" firstAttribute="height" secondItem="Tgs-Xf-8fA" secondAttribute="height" id="1ht-SV-rAU"/>
                             <constraint firstItem="wrv-ef-Ibu" firstAttribute="centerY" secondItem="Tgs-Xf-8fA" secondAttribute="centerY" id="jg5-WI-04B"/>
                             <constraint firstItem="wrv-ef-Ibu" firstAttribute="height" secondItem="Tgs-Xf-8fA" secondAttribute="height" id="vgr-5Q-Upn"/>
                         </constraints>
@@ -59,12 +60,6 @@
                     <constraint firstItem="Tgs-Xf-8fA" firstAttribute="width" secondItem="H2p-sc-9uM" secondAttribute="width" id="wfR-mZ-dXf"/>
                 </constraints>
             </tableViewCellContentView>
-            <constraints>
-                <constraint firstItem="Tgs-Xf-8fA" firstAttribute="width" secondItem="KGk-i7-Jjw" secondAttribute="width" id="VT2-Sm-sS2"/>
-                <constraint firstItem="Tgs-Xf-8fA" firstAttribute="centerX" secondItem="KGk-i7-Jjw" secondAttribute="centerX" id="WVt-XW-BHw"/>
-                <constraint firstItem="Tgs-Xf-8fA" firstAttribute="centerY" secondItem="KGk-i7-Jjw" secondAttribute="centerY" id="YJj-4b-iDh"/>
-                <constraint firstItem="Tgs-Xf-8fA" firstAttribute="height" secondItem="KGk-i7-Jjw" secondAttribute="height" id="try-bU-ZD2"/>
-            </constraints>
             <connections>
                 <outlet property="AlbumArt" destination="uJ0-4X-ryf" id="jbN-lw-Wls"/>
                 <outlet property="Artist" destination="8MF-91-b5W" id="c6F-Pl-j5K"/>
