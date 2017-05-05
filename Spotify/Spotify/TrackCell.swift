@@ -16,16 +16,15 @@ class TrackCell: UITableViewCell {
     var spottrack: SpotifyTrack?{
         didSet {
             Artist.text = spottrack?.artist
+            Artist.font = UIFont.boldSystemFont(ofSize: 13.0)
             Title.text = spottrack?.title
-            //AlbumArt.image = #imageLiteral(resourceName: "stanley")
+            AlbumArt.image = #imageLiteral(resourceName: "USU")
         }
     }
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        
-       // AlbumArt.image = #imageLiteral(resourceName: "stanley")
-        // Initialization code
+
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

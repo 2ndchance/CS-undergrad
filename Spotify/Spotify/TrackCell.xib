@@ -6,7 +6,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
-        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -19,48 +18,46 @@
                 <rect key="frame" x="0.0" y="0.0" width="342" height="75"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Tgs-Xf-8fA">
+                    <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Tgs-Xf-8fA">
                         <rect key="frame" x="0.0" y="0.0" width="342" height="75"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="uJ0-4X-ryf">
-                                <rect key="frame" x="0.0" y="0.0" width="75" height="75"/>
+                                <rect key="frame" x="0.0" y="0.0" width="80" height="75"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" secondItem="uJ0-4X-ryf" secondAttribute="height" multiplier="1:1" id="VSn-nO-HA8"/>
+                                    <constraint firstAttribute="width" constant="80" id="XsM-C1-1en"/>
                                 </constraints>
                             </imageView>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalCentering" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="wrv-ef-Ibu">
-                                <rect key="frame" x="75" y="0.0" width="267" height="75"/>
+                            <stackView opaque="NO" contentMode="scaleAspectFit" axis="vertical" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="wrv-ef-Ibu">
+                                <rect key="frame" x="90" y="0.0" width="252" height="75"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" preservesSuperviewLayoutMargins="YES" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OTD-Ku-lSQ" userLabel="Title">
-                                        <rect key="frame" x="0.0" y="0.0" width="267" height="20.5"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" preservesSuperviewLayoutMargins="YES" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OTD-Ku-lSQ" userLabel="Title">
+                                        <rect key="frame" x="0.0" y="0.0" width="252" height="37.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
+                                        <size key="shadowOffset" width="0.0" height="0.0"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Artist" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8MF-91-b5W" userLabel="Artist">
-                                        <rect key="frame" x="0.0" y="54.5" width="267" height="20.5"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" text="Artist" textAlignment="natural" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8MF-91-b5W" userLabel="Artist">
+                                        <rect key="frame" x="0.0" y="37.5" width="252" height="37.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
-                                <constraints>
-                                    <constraint firstItem="OTD-Ku-lSQ" firstAttribute="centerX" secondItem="wrv-ef-Ibu" secondAttribute="centerX" id="Elc-UU-qDi"/>
-                                    <constraint firstItem="8MF-91-b5W" firstAttribute="centerX" secondItem="wrv-ef-Ibu" secondAttribute="centerX" id="Esl-6F-86D"/>
-                                    <constraint firstItem="OTD-Ku-lSQ" firstAttribute="width" secondItem="wrv-ef-Ibu" secondAttribute="width" id="G6h-9y-G8e"/>
-                                    <constraint firstItem="8MF-91-b5W" firstAttribute="width" secondItem="wrv-ef-Ibu" secondAttribute="width" id="usj-3N-mYX"/>
-                                </constraints>
                             </stackView>
                         </subviews>
                         <constraints>
-                            <constraint firstItem="uJ0-4X-ryf" firstAttribute="height" secondItem="Tgs-Xf-8fA" secondAttribute="height" id="0qA-lI-IhA"/>
-                            <constraint firstItem="uJ0-4X-ryf" firstAttribute="leading" secondItem="Tgs-Xf-8fA" secondAttribute="leading" id="Saj-S2-bvx"/>
-                            <constraint firstItem="uJ0-4X-ryf" firstAttribute="top" secondItem="Tgs-Xf-8fA" secondAttribute="top" id="g07-eO-1Hd"/>
                             <constraint firstItem="wrv-ef-Ibu" firstAttribute="centerY" secondItem="Tgs-Xf-8fA" secondAttribute="centerY" id="jg5-WI-04B"/>
                             <constraint firstItem="wrv-ef-Ibu" firstAttribute="height" secondItem="Tgs-Xf-8fA" secondAttribute="height" id="vgr-5Q-Upn"/>
                         </constraints>
                     </stackView>
                 </subviews>
+                <constraints>
+                    <constraint firstItem="Tgs-Xf-8fA" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="3rH-TA-0NZ"/>
+                    <constraint firstItem="Tgs-Xf-8fA" firstAttribute="height" secondItem="H2p-sc-9uM" secondAttribute="height" id="6Yy-03-83I"/>
+                    <constraint firstItem="Tgs-Xf-8fA" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="QGU-sJ-Xli"/>
+                    <constraint firstItem="Tgs-Xf-8fA" firstAttribute="width" secondItem="H2p-sc-9uM" secondAttribute="width" id="wfR-mZ-dXf"/>
+                </constraints>
             </tableViewCellContentView>
             <constraints>
                 <constraint firstItem="Tgs-Xf-8fA" firstAttribute="width" secondItem="KGk-i7-Jjw" secondAttribute="width" id="VT2-Sm-sS2"/>
