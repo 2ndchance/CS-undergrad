@@ -13,9 +13,18 @@ class TrackCell: UITableViewCell {
     @IBOutlet weak var AlbumArt: UIImageView!
     @IBOutlet weak var Title: UILabel!
     @IBOutlet weak var Artist: UILabel!
+    var spottrack: SpotifyTrack?{
+        didSet {
+            Artist.text = spottrack?.artist
+            Title.text = spottrack?.title
+            //AlbumArt.image = #imageLiteral(resourceName: "stanley")
+        }
+    }
     
     override func awakeFromNib() {
         super.awakeFromNib()
+        
+       // AlbumArt.image = #imageLiteral(resourceName: "stanley")
         // Initialization code
     }
 
