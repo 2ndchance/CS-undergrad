@@ -18,7 +18,16 @@ class TrackCell: UITableViewCell {
             Artist.text = spottrack?.artist
             Artist.font = UIFont.boldSystemFont(ofSize: 13.0)
             Title.text = spottrack?.title
-            AlbumArt.image = #imageLiteral(resourceName: "USU")
+            let url = NSURL(string: (spottrack?.arturl)!)
+            let data = NSData(contentsOf: url! as URL)
+            if ((data?.length)! > 0){
+                AlbumArt.image = UIImage(data: data! as Data)
+            }
+            else {
+                AlbumArt.image = #imageLiteral(resourceName: "USU")
+            }
+            
+           // AlbumArt.image = #imageLiteral(resourceName: "USU")
         }
     }
     
